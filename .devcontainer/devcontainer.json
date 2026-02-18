@@ -19,10 +19,47 @@
             "markdown-lint.markdownlinter",
             "ms-python.python", // Python extension
             "ms-python.vscode-pylance", // Pylance extension for Python
-            "ms-python.debugpy" // Debugpy extension for Python
+            "ms-python.debugpy", // Debugpy extension for Python
+            "dbaeumer.vscode-eslint", // ESLint for JavaScript/React
+            "esbenp.prettier-vscode", // Prettier code formatter
+            "dsznajder.es7-react-js-snippets", // ES7+ React/Redux/React-Native snippets
+            "mongodb.mongodb-vscode", // MongoDB for VS Code
+            "mhutchie.git-graph", // Git Graph visualization
+            "eamodio.gitlens", // GitLens - Git supercharged
+            "ms-vscode.vscode-typescript-next", // TypeScript and JavaScript Language Features
+            "bradlc.vscode-tailwindcss", // Tailwind CSS IntelliSense (for potential future use)
+            "formulahendry.auto-rename-tag", // Auto rename paired HTML/XML tags
+            "formulahendry.auto-close-tag" // Auto close HTML/XML tags
         ],
         "settings": {
             "chat.agent.enabled": true,
+            "editor.formatOnSave": true,
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+            "editor.codeActionsOnSave": {
+                "source.fixAll.eslint": "explicit"
+            },
+            "[python]": {
+                "editor.defaultFormatter": "ms-python.python",
+                "editor.formatOnSave": true
+            },
+            "[javascript]": {
+                "editor.defaultFormatter": "esbenp.prettier-vscode"
+            },
+            "[javascriptreact]": {
+                "editor.defaultFormatter": "esbenp.prettier-vscode"
+            },
+            "[json]": {
+                "editor.defaultFormatter": "esbenp.prettier-vscode"
+            },
+            "python.linting.enabled": true,
+            "python.linting.pylintEnabled": false,
+            "python.formatting.provider": "none",
+            "eslint.validate": [
+                "javascript",
+                "javascriptreact"
+            ],
+            "files.autoSave": "afterDelay",
+            "files.autoSaveDelay": 1000
         }
     }
     },
